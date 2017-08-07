@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="login-h">
+        <div class="content">
+            <div class="login-box">
+                <h1 class="welcomeLogin">欢迎登录</h1>
+                <a class="goRegister" href="register.html">注册送大礼</a>
+                <ul class="tab">
+                    <li><p id="pwdLogin" class="tabCur">密码登录</p><i></i></li>
+                    <li><p id="codeLogin">验证码登录</p></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="pwdLogin show">
+                        <div class="form-item">
+                            <div class="item-box">
+                                <i class="phone"></i>
+                                <input class="user_phone" type="text" placeholder="请输入手机号／用户名" default="<p class='focus_message'>请您输入手机号/用户名</p>">
+                            </div>
+                        </div>
+                        <div class="input-trip">
+                            <p class="error_message"><i></i><span>请您输入正确的手机号/用户名</span></p>
+                        </div>
+                        <div class="form-item">
+                            <div class="item-box">
+                                <i class="pwd"></i>
+                                <input class="user_pwd" type="password" placeholder="6-16位数字和字母组合" default="<p class='focus_message'>请您输入6-16位数字和字母组合登录密码</p>">
+                                <span class="user_pwd_eyes"></span>
+                            </div>
+                        </div>
+                        <div class="input-trip">
+                            <p class="error_message"><i></i><span>请您输入正确的登录密码</span></p>
+                            <p class="pwd_error"><i></i><span>密码应为6-16位数字和字母组成</span></p>
+                        </div>
+                        <div class="form-item">
+                            <div class="item-box short">
+                                <i class="pwd_code"></i>
+                                <input id="captcha_input"  class="pwdLogin_code" type="text" placeholder="请输入验证码" default="<p class='focus_message'>请您输入验证码</p>"/>
+                            </div>
+                            <a class="login_txt04" href="javascript:void(0)"><img alt="点击刷新" id="verifyCode" src="#"/></a>
+                        </div>
+                        <div class="input-trip">
+                            <p class="error_message"><i></i><span>请您输入正确的验证码</span></p>
+                        </div>
+                        <div class="checkbox-box">
+                            <input type="checkbox" id="login-checkbox1">
+                            <label for="login-checkbox1">下次自动登录</label>
+                        </div>
+                        <div>
+                            <input class="login-btn" type="submit" value="立即登录"/>
+                        </div>
+                    </div>
+                    <div class="codeLogin">
+                        <div class="form-item">
+                            <div class="item-box">
+                                <i class="phone"></i>
+                                <input class="user_phone" type="text" placeholder="请输入手机号" default="<p class='focus_message'>请您输入手机号</p>">
+                            </div>
+                        </div>
+                        <div class="input-trip">
+                            <p class="error_message"><i></i><span>请您输入正确的手机号</span></p>
+                        </div>
+                        <div class="form-item">
+                            <div class="item-box short">
+                                <i class="code"></i>
+                                <input class="user_code" type="text" placeholder="输入验证码" default="<p class='focus_message'>请您输入验证码</p>">
+                            </div>
+                            <button class="getCodeBtn getSmsCode_s" type="button">获取验证码</button>
+                        </div>
+                        <div class="input-trip">
+                            <p class="error_message"><i></i><span>请您输入正确的验证码</span></p>
+                        </div>
+                        <div>
+                            <input class="login-btn" type="submit" value="立即登录">
+                        </div>
+                    </div>
+                </div>
+                <div class="other-box">
+                    <a href="#" class="kz-login"></a>
+                    <a href="#" class="forget-pwd">忘记密码？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

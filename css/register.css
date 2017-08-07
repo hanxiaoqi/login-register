@@ -1,0 +1,243 @@
+@font-face
+{
+    font-family: SourceHanSansCN-normal;
+    src: url('../font/SourceHanSansCN-normal.otf')
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('../font/Roboto-Regular.ttf');
+}
+body,div,ul,li,ol,dl,dt,p,dd,img,a,span,h1,h2,h3,h4{padding:0; margin:0; border:0; list-style:none;}
+body{font-size:14px; color:#000; background: #F4F4F4;font-family: "SourceHanSansCN-normal","microsoft yahei";}
+a{text-decoration:none;outline:none}
+i{text-decoration: none;}
+a:hover{text-decoration:none;}
+button,input,select,textarea{font-size:100%;vertical-align:middle;outline:none}
+header,footer,article,section,nav,menu{display:block;clear: both}
+.content {width: 1000px; margin: 0 auto;min-height: 50px;}
+.clear {clear: both;}
+.left{float: left}
+.right{float: right}
+
+
+.register-h{
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.register-h .content{
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 45px;
+}
+.register-h .register-box{
+    width: 440px;
+    height: 485px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    padding-top: 15px;
+}
+.register-h .welcomeRegister{
+    display: inline-block;
+}
+.register-h .goLogin{
+    display: inline-block;
+    font-size: 16px;
+    color: #f34a35;
+    cursor: pointer;
+    float: right;
+    line-height: 37px;
+}
+
+/*注册样式*/
+.register-h .form_register{
+    padding-top: 5px;
+}
+.register-h .form-item{
+    position: relative;
+    z-index: 12;
+}
+.register-h .form-item .item-box{
+    border-bottom: 1px solid #b8b8b8;
+}
+.register-h .form-item .short{
+    display: inline-block;
+    width: 265px;
+}
+.register-h .form-item label{
+    font-size: 14px;
+    color: #acacae;
+    line-height: 40px;
+    position: absolute;
+    left: 35px;
+    z-index: 2;
+}
+.register-h .input-trip{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #616263;
+}
+.register-h .form-item input{
+    width: 345px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border:none;
+}
+.register-h .phone{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background: url(../images/icon-phone.png) no-repeat center;
+    vertical-align: middle;
+}
+.register-h .pwd{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background: url(../images/icon-pwd.png) no-repeat center;
+    vertical-align: middle;
+}
+
+.register-h .form_register .user_imgCode{
+    width: 230px;
+    padding-right: 30px;
+}
+.register-h .form_register .imgCode{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(../images/icon-imgCode.png) no-repeat center;
+}
+.register-h .form_register .user_noteCode{
+    width: 230px;
+    padding-right: 30px;
+}
+.register-h .form_register .noteCode{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(../images/icon-noteCode.png) no-repeat center;
+}
+.register-h .getCodeImg{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.register-h .getCodeBtn{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #606060;
+    border:none;
+    padding: 0;
+    cursor: default;
+    vertical-align: middle;
+}
+.register-h .getSmsCode_s{
+    cursor: pointer;
+}
+.register-h .user_pwd_eyes{
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    background-image: url(../images/icon-eyesClose.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+}
+.register-h .focus_message{
+    font-size: 12px;
+    color: #616263;
+}
+.register-h .error_message{
+    font-size: 12px;
+    color: #2875d9;
+    display: none;
+}
+.register-h .error_message i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon-hint.png) no-repeat center;
+    vertical-align: middle;
+}
+.register-h .pwd_error{
+    font-size: 12px;
+    color: #2875d9;
+    display: none;
+}
+.register-h .pwd_error i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon-hint.png) no-repeat center;
+    vertical-align: middle;
+}
+/*推荐人*/
+.register-h .referrer-box{
+    margin-top: 3px;
+}
+.register-h .referrer-box input{
+    width: 12px;
+    height: 12px;
+}
+.register-h .referrer-box label{
+    font-size: 14px;
+    color: #959595;
+}
+.register-h .referrer-input{
+    display: none;
+}
+/*立即注册*/
+.register-h .register-btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: #2875d9;
+    line-height: 45px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+/*阅读并同意*/
+.register-h .checkbox-box{
+    margin-top: 10px;
+}
+.register-h .checkbox-box input{
+    width: 12px;
+    height: 12px;
+}
+.register-h .checkbox-box label{
+    font-size: 14px;
+    color: #959595;
+}
+.register-h .checkbox-box label a{
+    color: #2875d9;
+}
+
+
+

@@ -1,0 +1,289 @@
+@font-face
+{
+    font-family: SourceHanSansCN-normal;
+    src: url('../font/SourceHanSansCN-normal.otf')
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('../font/Roboto-Regular.ttf');
+}
+body,div,ul,li,ol,dl,dt,p,dd,img,a,span,h1,h2,h3,h4{padding:0; margin:0; border:0; list-style:none;}
+body{font-size:14px; color:#000; background: #F4F4F4;font-family: "SourceHanSansCN-normal","microsoft yahei";}
+a{text-decoration:none;outline:none}
+i{text-decoration: none;}
+a:hover{text-decoration:none;}
+button,input,select,textarea{font-size:100%;vertical-align:middle;outline:none}
+header,footer,article,section,nav,menu{display:block;clear: both}
+.content {width: 1000px; margin: 0 auto;min-height: 50px;}
+.clear {clear: both;}
+.left{float: left}
+.right{float: right}
+
+.login-h .tab-content .show{
+    display: block;
+}
+
+.login-h{
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login-h .content{
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 45px;
+}
+.login-h .login-box{
+    width: 440px;
+    height: 485px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+}
+.login-h .welcomeLogin{
+    display: inline-block;
+}
+.login-h .goRegister{
+    display: inline-block;
+    font-size: 16px;
+    color: #f34a35;
+    cursor: pointer;
+    float: right;
+    line-height: 37px;
+}
+.login-h .tab{
+    padding: 0 20px;
+    margin-top: 5px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.login-h .tab:after{
+    content:'';
+    display: table;
+    clear:both;
+}
+.login-h .tab li{
+    float: left;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.login-h .tab li p{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+}
+.login-h .tab li i{
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    border-left:1px solid #e2e2e2;
+    vertical-align: middle;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+.login-h .tab li p.tabCur{
+    color: #2875d9;
+    border-bottom:3px solid #2875d9;
+}
+
+/*登录样式*/
+.login-h .tab-content{
+    padding-top: 15px;
+}
+.login-h .pwdLogin{
+    width: 100%;
+    display: none;
+}
+.login-h .form-item{
+    position: relative;
+    z-index: 12;
+}
+.login-h .form-item .item-box{
+    border-bottom: 1px solid #b8b8b8;
+}
+.login-h .form-item .short{
+    display: inline-block;
+    width: 265px;
+}
+.login-h .input-trip{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #616263;
+}
+.login-h .form-item input{
+    width: 345px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border:none;
+}
+.login-h .phone{
+    background: url(../images/icon-phone.png) no-repeat center;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+}
+.login-h .pwd{
+    background: url(../images/icon-pwd.png) no-repeat center;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+}
+.login-h .user_pwd_eyes{
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    background-image: url(../images/icon-eyesClose.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+}
+.login-h .focus_message{
+    font-size: 12px;
+    color: #616263;
+}
+.login-h .error_message{
+    font-size: 12px;
+    color: #2875d9;
+    display: none;
+}
+.login-h .error_message i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon-hint.png) no-repeat center;
+    vertical-align: middle;
+}
+.login-h .pwd_error{
+    font-size: 12px;
+    color: #2875d9;
+    display: none;
+}
+.login-h .pwd_error i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icon-hint.png) no-repeat center;
+    vertical-align: middle;
+}
+.login-h .checkbox-box{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.login-h .checkbox-box input{
+    width: 12px;
+    height: 12px;
+}
+.login-h .checkbox-box label{
+    font-size: 14px;
+    color: #959595;
+}
+.login-h .login-btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: #2875d9;
+    line-height: 45px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: default;
+}
+.login-h .getSmsCode_s{
+    cursor: pointer;
+}
+.login-h .other-box{
+    width: 100%;
+    margin-top: 15px;
+}
+.login-h .other-box .kz-login{
+    display: inline-block;
+    width: 111px;
+    height: 22px;
+    background: url(../images/kz-login.png) no-repeat center;
+    cursor: pointer;
+}
+.login-h .other-box .kz-login:hover{
+    background: url(../images/kz-login-hover.png) no-repeat center;
+}
+.login-h .other-box .forget-pwd{
+    font-size: 14px;
+    color: #959595;
+    float: right;
+}
+.login-h .pwdLogin .form-item .pwdLogin_code{
+    width: 230px;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+}
+.login-h .pwdLogin .form-item .pwd_code{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(../images/icon-noteCode.png) no-repeat center;
+}
+.login_txt04{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #606060;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.login_txt04 img{
+    width: 100%;
+}
+
+/*验证码登录*/
+.login-h .codeLogin{
+    width: 100%;
+    display: none;
+}
+.login-h .codeLogin .user_code{
+    width: 230px;
+}
+.login-h .codeLogin .code{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(../images/icon-noteCode.png) no-repeat center;
+}
+.login-h .codeLogin .getCodeBtn{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #606060;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+

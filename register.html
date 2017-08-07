@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="register-h">
+        <div class="content">
+            <div class="register-box">
+                <h1 class="welcomeRegister">欢迎注册</h1>
+                <a class="goLogin" href="login.html">已有账户，请登录</a>
+                <form class="form_register">
+                    <div class="form-item">
+                        <div class="item-box">
+                            <i class="phone"></i>
+                            <input class="user_phone" type="text" placeholder="请输入手机号" default="<p class='focus_message'>请您输入手机号</p>">
+                        </div>
+                    </div>
+                    <div class="input-trip">
+                        <p class="error_message"><i></i><span>请您输入正确的手机号</span></p>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-box">
+                            <i class="pwd"></i>
+                            <input class="user_pwd" type="password" placeholder="6-16位数字和字母组合" default="<p class='focus_message'>请您输入登录密码</p>">
+                            <span class="user_pwd_eyes"></span>
+                        </div>
+                    </div>
+                    <div class="input-trip">
+                        <p class="error_message"><i></i><span>密码应为6-16位数字和字母组成</span></p>
+                        <p class="pwd_error"><i></i><span>密码应为6-16位数字和字母组成</span></p>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-box short">
+                            <i class="imgCode"></i>
+                            <input class="user_imgCode" type="text" placeholder="输入图片验证码" default="<p class='focus_message'>请您输入验证码</p>">
+                        </div>
+                        <img class="getCodeImg" src="" alt="点击刷新"/>
+                    </div>
+                    <div class="input-trip">
+                        <p class="error_message"><i></i><span>请您输入正确的验证码</span></p>
+                    </div>
+                    <div class="form-item">
+                        <div class="item-box short">
+                            <i class="noteCode"></i>
+                            <input class="user_noteCode" type="text" placeholder="输入验证码" default="<p class='focus_message'>请您输入手机验证码</p>">
+                        </div>
+                        <button class="getCodeBtn getSmsCode_s" type="button">获取验证码</button>
+                    </div>
+                    <div class="input-trip">
+                        <p class="error_message"><i></i><span>请您输入正确的手机验证码</span></p>
+                    </div>
+                    <div class="referrer-box">
+                        <input type="checkbox" id="referrer">
+                        <label for="referrer">填写推荐人</label>
+                    </div>
+                    <div class="form-item referrer-input">
+                        <div class="item-box">
+                            <i class="phone"></i>
+                            <input class="user_referrer_phone" type="text" placeholder="请输入推荐人手机号／用户名" default="<p class='focus_message'>请您输入推荐人手机号／用户名</p>">
+                        </div>
+                    </div>
+                    <div class="input-trip">
+                        <p class="error_message"><i></i><span>请您输入正确的推荐人手机号／用户名</span></p>
+                    </div>
+                    <div>
+                        <a class="register-btn" href="#">立即注册</a>
+                    </div>
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="register-checkbox" checked="true">
+                        <label for="register-checkbox">我已阅读并同意 <a href="#">《使用协议》及《隐私条款》</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
